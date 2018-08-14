@@ -8,3 +8,5 @@ install django
 Create django app
 Configure settings.py for sending emails
 Send email from script.js
+
+Send an ajax request with every page and update the view for that page
