@@ -28,3 +28,7 @@ urlpatterns = [
     path('blog/', views.blog_view, name='blog-view'),
     path('about/', views.about_view, name='about-view'),
 ]
+
+urlpatterns += [
+	path('send-view-visit/', views.send_view_visit, name='send-view-visit')
+]
