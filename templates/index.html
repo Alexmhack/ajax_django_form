@@ -8,6 +8,16 @@
 
 	<div class="container">
 		<h1>Home Page</h1>
+
+		<ul>
+			<li><a href="{% url 'service-view' %}">Services</a></li>
+			<li><a href="{% url 'feature-view' %}">Features</a></li>
+			<li><a href="{% url 'price-view' %}">Pricing</a></li>
+			<li><a href="{% url 'about-view' %}">About</a></li>
+			<li><a href="{% url 'contact-view' %}">Contact</a></li>
+			<li><a href="{% url 'blog-view' %}">Blog</a></li>
+		</ul>
+
 		<p>Contact Page has been visited: <span id="contact-view"></span></p>
 		<p>Services Page has been visited: <span id="services-view"></span></p>
 		<p>Features Page has been visited: <span id="features-view"></span></p>
