@@ -30,5 +30,5 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-	path('send-view-visit/', views.send_view_visit, name='send-view-visit')
+    path('send-view-visit/', views.send_view_visit, name='send-view-visit')
 ]

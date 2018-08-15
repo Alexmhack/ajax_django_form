@@ -29,9 +29,15 @@ def about_view(request):
 	return render(request, 'about.html')
 
 
+visits = dict()
+data = dict()
+
+
 def send_view_visit(request):
-	view = request.GET.get("view")
-	data = {
-		'': '',
-	}
+	view = request.GET.get("viewPage")
+	visits[view] = 10
+	data['total'] = visits[view]
+	print(data)
+	print(visits)
+
 	return JsonResponse(data)
